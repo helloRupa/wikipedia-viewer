@@ -38,10 +38,7 @@
       titleLink.href = resObj[3][idx];
       titleLink.textContent = el;
       titleLink.target = "_blank";
-      if (resObj[2][idx]) 
-        desc.textContent = resObj[2][idx];
-      else 
-        desc.textContent = "Description Unavailable";
+      desc.textContent = (resObj[2][idx]) ? resObj[2][idx] : "Description Unavailable";
       results.appendChild(titleLink);
       results.appendChild(desc);
     });
