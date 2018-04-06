@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer</title>
+    <meta name="description" content="Search Wikipedia or Go to a Random Page">
+    <meta name="author" content="Rupa">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Wikipedia Viewer</h1>
+        <div id="search">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="random">Surprise Me!</a>
+            <div id="search-text">
+                <input id="submit" type="image" name="submit" src="https://image.flaticon.com/icons/svg/149/149852.svg" border="0" alt="Submit">
+                <input id="search_bar" type="text" name="search_bar" placeholder="Search here">
+            </div>
+        </div>
+        <div id="error">
+            <p>We're sorry, but something seems to have gone wrong. Please try your search again later.</p>
+        </div>
+        <div id="results">
+        </div>
+    </div>
+    <script type="text/javascript" src="./wiki-viewer.js"></script>
+</body>
